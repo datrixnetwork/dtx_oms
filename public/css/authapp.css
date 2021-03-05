@@ -1,0 +1,78 @@
+.bg-login-image {
+    /* background: url(/images/dtx_logo.jpeg); */
+    background: url(https://images.pexels.com/photos/3153203/pexels-photo-3153203.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-position: center;
+    background-size: cover;
+    padding: 0 !important;
+}
+.input-group-text span {
+    color: #0062c
+}
+.register-page,.login-page,.page{
+    padding: 50px;
+}
+
+.form-column{
+    min-height: 100% !important;
+    min-height: 80vh !important;
+    display: flex !important;
+    align-items: center !important;
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: -webkit-flex !important;
+    display: flex !important;
+    background: #fff;
+}
+.form-column-signup{
+    min-height: 100% !important;
+    min-height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: -webkit-flex !important;
+    display: flex !important;
+    background: #fff;
+}
+.card{
+    width: 100% !important;
+    box-shadow: none !important;
+}
+.login-card-body, .register-card-body {
+    background: #ffffff;
+    border-top: 0;
+    color: #666;
+    padding: 0 20px !important;
+}
+.login-logo, .register-logo {
+    font-size: 2.1rem;
+    font-weight: 300;
+    margin-bottom: 0 !important;
+    text-align: center;
+}
+.login-logo img, .register-logo img{
+height: 150px;
+}
+.input-group-text {
+    color: #203354 !important;
+}
+input.form-control {
+    height: 42px;
+    outline: none;
+}
+#gender {
+    margin: 0 10px 0 0;
+}
+@media only screen and (max-width: 767px) {
+.login-logo img, .register-logo img {
+    height: 100%;
+    width: 100%;
+}
+}
+

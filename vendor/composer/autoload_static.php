@@ -40,6 +40,7 @@ class ComposerStaticInit3709604479d6e31e56dde52e2a7bb067
         'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
+        '0b47d6d4a00ca9112ba3953b49e7c9a4' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/helper.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -51,6 +52,10 @@ class ComposerStaticInit3709604479d6e31e56dde52e2a7bb067
         array (
             'phpseclib\\' => 10,
             'phpDocumentor\\Reflection\\' => 25,
+        ),
+        'Y' => 
+        array (
+            'Yajra\\DataTables\\' => 17,
         ),
         'X' => 
         array (
@@ -135,6 +140,7 @@ class ComposerStaticInit3709604479d6e31e56dde52e2a7bb067
             'League\\Event\\' => 13,
             'League\\CommonMark\\' => 18,
             'Lcobucci\\JWT\\' => 13,
+            'Laravel\\Ui\\' => 11,
             'Laravel\\Tinker\\' => 15,
             'Laravel\\Sail\\' => 13,
             'Laravel\\Passport\\Database\\Factories\\' => 36,
@@ -142,7 +148,10 @@ class ComposerStaticInit3709604479d6e31e56dde52e2a7bb067
         ),
         'I' => 
         array (
+            'InfyOm\\GeneratorHelpers\\' => 24,
+            'InfyOm\\AdminLTEPreset\\' => 22,
             'Illuminate\\Support\\' => 19,
+            'Illuminate\\Foundation\\Auth\\' => 27,
             'Illuminate\\' => 11,
         ),
         'H' => 
@@ -211,6 +220,10 @@ class ComposerStaticInit3709604479d6e31e56dde52e2a7bb067
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+        ),
+        'Yajra\\DataTables\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src',
         ),
         'XdgBaseDir\\' => 
         array (
@@ -429,6 +442,10 @@ class ComposerStaticInit3709604479d6e31e56dde52e2a7bb067
         array (
             0 => __DIR__ . '/..' . '/lcobucci/jwt/src',
         ),
+        'Laravel\\Ui\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/ui/src',
+        ),
         'Laravel\\Tinker\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
@@ -445,10 +462,22 @@ class ComposerStaticInit3709604479d6e31e56dde52e2a7bb067
         array (
             0 => __DIR__ . '/..' . '/laravel/passport/src',
         ),
+        'InfyOm\\GeneratorHelpers\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/infyomlabs/laravel-generator-helpers/src',
+        ),
+        'InfyOm\\AdminLTEPreset\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/infyomlabs/laravel-ui-adminlte/src',
+        ),
         'Illuminate\\Support\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Macroable',
             1 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections',
+        ),
+        'Illuminate\\Foundation\\Auth\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/ui/auth-backend',
         ),
         'Illuminate\\' => 
         array (
@@ -571,10 +600,34 @@ class ComposerStaticInit3709604479d6e31e56dde52e2a7bb067
     );
 
     public static $classMap = array (
+        'App\\BusinessLayer\\Order\\bl_Order' => __DIR__ . '/../..' . '/app/BusinessLayer/Order/bl_Order.php',
+        'App\\BusinessLayer\\Product\\bl_Product' => __DIR__ . '/../..' . '/app/BusinessLayer/Product/bl_Product.php',
+        'App\\BusinessLayer\\Seller\\bl_Seller' => __DIR__ . '/../..' . '/app/BusinessLayer/Seller/bl_Seller.php',
+        'App\\BusinessLayer\\Users\\bl_User' => __DIR__ . '/../..' . '/app/BusinessLayer/Users/bl_User.php',
+        'App\\BusinessLayer\\Users\\bl_User_Info' => __DIR__ . '/../..' . '/app/BusinessLayer/Users/bl_User_Info.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Helpers\\Helper' => __DIR__ . '/../..' . '/app/Helpers/Helper.php',
+        'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
+        'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
+        'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\ctrl_City' => __DIR__ . '/../..' . '/app/Http/Controllers/ctrl_City.php',
+        'App\\Http\\Controllers\\ctrl_Country' => __DIR__ . '/../..' . '/app/Http/Controllers/ctrl_Country.php',
+        'App\\Http\\Controllers\\ctrl_Order' => __DIR__ . '/../..' . '/app/Http/Controllers/ctrl_Order.php',
+        'App\\Http\\Controllers\\ctrl_Order_Attachment' => __DIR__ . '/../..' . '/app/Http/Controllers/ctrl_Order_Attachment.php',
+        'App\\Http\\Controllers\\ctrl_Order_Status' => __DIR__ . '/../..' . '/app/Http/Controllers/ctrl_Order_Status.php',
+        'App\\Http\\Controllers\\ctrl_Payment_Gateway' => __DIR__ . '/../..' . '/app/Http/Controllers/ctrl_Payment_Gateway.php',
+        'App\\Http\\Controllers\\ctrl_Product' => __DIR__ . '/../..' . '/app/Http/Controllers/ctrl_Product.php',
+        'App\\Http\\Controllers\\ctrl_Seller' => __DIR__ . '/../..' . '/app/Http/Controllers/ctrl_Seller.php',
+        'App\\Http\\Controllers\\ctrl_State' => __DIR__ . '/../..' . '/app/Http/Controllers/ctrl_State.php',
+        'App\\Http\\Controllers\\ctrl_User' => __DIR__ . '/../..' . '/app/Http/Controllers/ctrl_User.php',
+        'App\\Http\\Controllers\\ctrl_User_Info' => __DIR__ . '/../..' . '/app/Http/Controllers/ctrl_User_Info.php',
+        'App\\Http\\Controllers\\ctrl_User_Payment_Info' => __DIR__ . '/../..' . '/app/Http/Controllers/ctrl_User_Payment_Info.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\AuthorizationHeader' => __DIR__ . '/../..' . '/app/Http/Middleware/AuthorizationHeader.php',
@@ -586,12 +639,25 @@ class ComposerStaticInit3709604479d6e31e56dde52e2a7bb067
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Models\\mdl_City' => __DIR__ . '/../..' . '/app/Models/mdl_City.php',
+        'App\\Models\\mdl_Countries' => __DIR__ . '/../..' . '/app/Models/mdl_Country.php',
+        'App\\Models\\mdl_OauthAccessToken' => __DIR__ . '/../..' . '/app/Models/mdl_OauthAccessToken.php',
+        'App\\Models\\mdl_Order' => __DIR__ . '/../..' . '/app/Models/mdl_Order.php',
+        'App\\Models\\mdl_Order_Attachment' => __DIR__ . '/../..' . '/app/Models/mdl_Order_Attachment.php',
+        'App\\Models\\mdl_Order_Status' => __DIR__ . '/../..' . '/app/Models/mdl_Order_Status.php',
+        'App\\Models\\mdl_Payment_Gateway' => __DIR__ . '/../..' . '/app/Models/mdl_Payment_Gateway.php',
+        'App\\Models\\mdl_Product' => __DIR__ . '/../..' . '/app/Models/mdl_Product.php',
+        'App\\Models\\mdl_Seller' => __DIR__ . '/../..' . '/app/Models/mdl_Seller.php',
+        'App\\Models\\mdl_State' => __DIR__ . '/../..' . '/app/Models/mdl_State.php',
         'App\\Models\\mdl_User' => __DIR__ . '/../..' . '/app/Models/mdl_User.php',
+        'App\\Models\\mdl_User_Info' => __DIR__ . '/../..' . '/app/Models/mdl_User_Info.php',
+        'App\\Models\\mdl_User_Payment_Info' => __DIR__ . '/../..' . '/app/Models/mdl_User_Payment_Info.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Services\\Utility\\AuthService' => __DIR__ . '/../..' . '/app/Services/Utility/AuthService.php',
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Cors.php',
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/CorsService.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
@@ -2080,8 +2146,16 @@ class ComposerStaticInit3709604479d6e31e56dde52e2a7bb067
         'Illuminate\\Foundation\\Application' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Application.php',
         'Illuminate\\Foundation\\Auth\\Access\\Authorizable' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Auth/Access/Authorizable.php',
         'Illuminate\\Foundation\\Auth\\Access\\AuthorizesRequests' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Auth/Access/AuthorizesRequests.php',
+        'Illuminate\\Foundation\\Auth\\AuthenticatesUsers' => __DIR__ . '/..' . '/laravel/ui/auth-backend/AuthenticatesUsers.php',
+        'Illuminate\\Foundation\\Auth\\ConfirmsPasswords' => __DIR__ . '/..' . '/laravel/ui/auth-backend/ConfirmsPasswords.php',
         'Illuminate\\Foundation\\Auth\\EmailVerificationRequest' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Auth/EmailVerificationRequest.php',
+        'Illuminate\\Foundation\\Auth\\RedirectsUsers' => __DIR__ . '/..' . '/laravel/ui/auth-backend/RedirectsUsers.php',
+        'Illuminate\\Foundation\\Auth\\RegistersUsers' => __DIR__ . '/..' . '/laravel/ui/auth-backend/RegistersUsers.php',
+        'Illuminate\\Foundation\\Auth\\ResetsPasswords' => __DIR__ . '/..' . '/laravel/ui/auth-backend/ResetsPasswords.php',
+        'Illuminate\\Foundation\\Auth\\SendsPasswordResetEmails' => __DIR__ . '/..' . '/laravel/ui/auth-backend/SendsPasswordResetEmails.php',
+        'Illuminate\\Foundation\\Auth\\ThrottlesLogins' => __DIR__ . '/..' . '/laravel/ui/auth-backend/ThrottlesLogins.php',
         'Illuminate\\Foundation\\Auth\\User' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Auth/User.php',
+        'Illuminate\\Foundation\\Auth\\VerifiesEmails' => __DIR__ . '/..' . '/laravel/ui/auth-backend/VerifiesEmails.php',
         'Illuminate\\Foundation\\Bootstrap\\BootProviders' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php',
         'Illuminate\\Foundation\\Bootstrap\\HandleExceptions' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php',
         'Illuminate\\Foundation\\Bootstrap\\LoadConfiguration' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php',
@@ -2601,6 +2675,10 @@ class ComposerStaticInit3709604479d6e31e56dde52e2a7bb067
         'Illuminate\\View\\ViewFinderInterface' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewFinderInterface.php',
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
+        'InfyOm\\AdminLTEPreset\\AdminLTEPreset' => __DIR__ . '/..' . '/infyomlabs/laravel-ui-adminlte/src/AdminLTEPreset.php',
+        'InfyOm\\AdminLTEPreset\\AdminLTEPresetServiceProvider' => __DIR__ . '/..' . '/infyomlabs/laravel-ui-adminlte/src/AdminLTEPresetServiceProvider.php',
+        'InfyOm\\AdminLTEPreset\\FortifyAdminLTEPresetServiceProvider' => __DIR__ . '/..' . '/infyomlabs/laravel-ui-adminlte/src/FortifyAdminLTEPresetServiceProvider.php',
+        'InfyOm\\GeneratorHelpers\\LaravelUtils' => __DIR__ . '/..' . '/infyomlabs/laravel-generator-helpers/src/LaravelUtils.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'Laravel\\Passport\\ApiTokenCookieFactory' => __DIR__ . '/..' . '/laravel/passport/src/ApiTokenCookieFactory.php',
         'Laravel\\Passport\\AuthCode' => __DIR__ . '/..' . '/laravel/passport/src/AuthCode.php',
@@ -2670,6 +2748,15 @@ class ComposerStaticInit3709604479d6e31e56dde52e2a7bb067
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
         'Laravel\\Tinker\\TinkerServiceProvider' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerServiceProvider.php',
+        'Laravel\\Ui\\AuthCommand' => __DIR__ . '/..' . '/laravel/ui/src/AuthCommand.php',
+        'Laravel\\Ui\\AuthRouteMethods' => __DIR__ . '/..' . '/laravel/ui/src/AuthRouteMethods.php',
+        'Laravel\\Ui\\ControllersCommand' => __DIR__ . '/..' . '/laravel/ui/src/ControllersCommand.php',
+        'Laravel\\Ui\\Presets\\Bootstrap' => __DIR__ . '/..' . '/laravel/ui/src/Presets/Bootstrap.php',
+        'Laravel\\Ui\\Presets\\Preset' => __DIR__ . '/..' . '/laravel/ui/src/Presets/Preset.php',
+        'Laravel\\Ui\\Presets\\React' => __DIR__ . '/..' . '/laravel/ui/src/Presets/React.php',
+        'Laravel\\Ui\\Presets\\Vue' => __DIR__ . '/..' . '/laravel/ui/src/Presets/Vue.php',
+        'Laravel\\Ui\\UiCommand' => __DIR__ . '/..' . '/laravel/ui/src/UiCommand.php',
+        'Laravel\\Ui\\UiServiceProvider' => __DIR__ . '/..' . '/laravel/ui/src/UiServiceProvider.php',
         'Lcobucci\\JWT\\Builder' => __DIR__ . '/..' . '/lcobucci/jwt/src/Builder.php',
         'Lcobucci\\JWT\\Claim' => __DIR__ . '/..' . '/lcobucci/jwt/src/Claim.php',
         'Lcobucci\\JWT\\Claim\\Basic' => __DIR__ . '/..' . '/lcobucci/jwt/src/Claim/Basic.php',
@@ -5364,6 +5451,22 @@ class ComposerStaticInit3709604479d6e31e56dde52e2a7bb067
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
         'XdgBaseDir\\Xdg' => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src/Xdg.php',
+        'Yajra\\DataTables\\ApiResourceDataTable' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/ApiResourceDataTable.php',
+        'Yajra\\DataTables\\CollectionDataTable' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/CollectionDataTable.php',
+        'Yajra\\DataTables\\Contracts\\DataTable' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Contracts/DataTable.php',
+        'Yajra\\DataTables\\Contracts\\Formatter' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Contracts/Formatter.php',
+        'Yajra\\DataTables\\DataTableAbstract' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/DataTableAbstract.php',
+        'Yajra\\DataTables\\DataTables' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/DataTables.php',
+        'Yajra\\DataTables\\DataTablesServiceProvider' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/DataTablesServiceProvider.php',
+        'Yajra\\DataTables\\EloquentDataTable' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/EloquentDataTable.php',
+        'Yajra\\DataTables\\Exceptions\\Exception' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Exceptions/Exception.php',
+        'Yajra\\DataTables\\Facades\\DataTables' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Facades/DataTables.php',
+        'Yajra\\DataTables\\Processors\\DataProcessor' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Processors/DataProcessor.php',
+        'Yajra\\DataTables\\Processors\\RowProcessor' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Processors/RowProcessor.php',
+        'Yajra\\DataTables\\QueryDataTable' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/QueryDataTable.php',
+        'Yajra\\DataTables\\Utilities\\Config' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Utilities/Config.php',
+        'Yajra\\DataTables\\Utilities\\Helper' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Utilities/Helper.php',
+        'Yajra\\DataTables\\Utilities\\Request' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Utilities/Request.php',
         'phpDocumentor\\Reflection\\DocBlock' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlock.php',
         'phpDocumentor\\Reflection\\DocBlockFactory' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',
         'phpDocumentor\\Reflection\\DocBlockFactoryInterface' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactoryInterface.php',
