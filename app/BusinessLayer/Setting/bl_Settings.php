@@ -1,11 +1,9 @@
 <?php
-namespace App\BusinessLayer\Product;
+namespace App\BusinessLayer\Setting;
 use Illuminate\Http\Request;
 use App\Helpers\Helper;
-use Exception;
-use DB;
 
-class bl_Product{
+class bl_Settings{
 
     private $config          = false;
     private $_model          = false;
@@ -26,27 +24,15 @@ class bl_Product{
 
 
     public function show($data,$id=false){
-        $query       = $data['query'];
-        $sizeOfQuery = sizeof($query);
-        $qVal1       = $query['product_code'];
 
         if(!$id){
-
-            if($sizeOfQuery > 0){
-                $response = $this->_model::where('product_code','LIKE',"%$qVal1%")->get();
-            }
-            else{
-                $response = $this->_model::get();
-            }
-        }
-        else{
+            $response = $this->_model::get();
+        }else{
             $response = $this->_model::find($id);
         }
-
         if(blank($response)){
             throw new Exception("No data found", 404);
         }
-
         return Helper::MakeResponse('ok',$response);
     }
 

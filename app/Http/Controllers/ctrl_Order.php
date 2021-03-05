@@ -33,8 +33,10 @@ class ctrl_Order extends Controller
         //Load BL with models
         $buisnessLayer           =  Helper::LoadBl($this->_bl,$data['models']);
 
+        $requestedData           = array('reqBody'=>$data['reqBody'],'query'=>array_filter($data['queryString']));
+
         //Load BL Function
-        $response                = $buisnessLayer->show($data);
+        $response                = $buisnessLayer->show($requestedData);
         return $response;
     }
 
@@ -115,7 +117,6 @@ class ctrl_Order extends Controller
      */
     public function update(Request $request, $id)
     {
-
 
         //MA - Set Client info and request body data
         $data = Helper::manageRequestData($request,true);
